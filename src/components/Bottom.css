@@ -1,0 +1,8 @@
+.bottom {}
+.bottom .section-github, .section-email {
+    display: flex;
+}
+.bottom .section-github .icon-github, .icon-email {
+    width: 30px;
+    height: 30px;
+}
