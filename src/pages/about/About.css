@@ -1,3 +1,6 @@
 .section-about {
     height: 100vh;
 }
+.section-about p {
+    margin: 0;
+}

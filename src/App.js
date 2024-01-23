@@ -30,7 +30,7 @@ function App() {
           background-attachment: fixed;
           background-image: radial-gradient(
             circle at var(--x, 100px) var(--y, 100px),
-            #29204f 0,
+            #392e66 0,
             #110641 50%
           );
         }

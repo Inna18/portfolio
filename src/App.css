@@ -11,7 +11,10 @@
 .sidebar {
   position: fixed;
   width: 400px;
-  height: 100%;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main {

@@ -5,9 +5,13 @@ import Bottom from "./Bottom";
 export default function Sidebar() {
   return (
     <div className="sidebar">
-      <Title />
-      <Navbar />
-      <Bottom />
+      <div className="sidebar-top">
+        <Title />
+        <Navbar />
+      </div>
+      <div className="sidebar-bottom">
+        <Bottom />
+      </div>
     </div>
   )
 }

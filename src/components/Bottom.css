@@ -1,8 +1,9 @@
-.bottom {}
-.bottom .section-github, .section-email {
+.bottom {
+}
+.bottom .section-github, .section-email, .section-theme {
     display: flex;
 }
-.bottom .section-github .icon-github, .icon-email {
+.bottom .section-github .icon-github, .icon-email, .icon-theme {
     width: 30px;
     height: 30px;
 }
