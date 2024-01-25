@@ -1,0 +1,42 @@
+.menu {
+    margin: 20px 0;
+}
+.menu div {
+    margin-bottom: 25px;
+}
+.menu div:last-child {
+    margin-bottom: 0;
+}
+.menu div a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menu div a:hover span {
+    color: #E2E8F0;
+}
+
+.menu div a .dash {
+    width: 30px;
+    height: 1px;
+    background: #94A3B8;
+    content: "";
+    margin-right: 20px;
+    transition: width .2s ease-in-out;
+}
+.menu div a .long-dash {
+    width: 60px;
+    height: 1px;
+    background: #E2E8F0;
+    content: "";
+    margin-right: 20px;
+    transition: width .2s ease-in-out;
+}
+.menu div a:hover .dash {
+    width: 60px;
+    background: #E2E8F0;
+    transition: width .2s ease-in-out;
+}

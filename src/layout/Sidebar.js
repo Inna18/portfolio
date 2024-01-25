@@ -1,13 +1,13 @@
-import Title from "../pages/title/Title";
-import Navbar from "./Navbar";
-import Bottom from "./Bottom";
+import Title from "../components/Title";
+import Menu from "../components/Menu";
+import Bottom from "../components/Bottom";
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-top">
         <Title />
-        <Navbar />
+        <Menu />
       </div>
       <div className="sidebar-bottom">
         <Bottom />

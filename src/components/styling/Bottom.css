@@ -1,0 +1,31 @@
+.bottom {
+    font-size: 14px;
+}
+.bottom .bottom-upper {
+    display: flex;
+}
+.bottom .bottom-upper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.bottom .section-github, .section-email, .section-theme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #94A3B8;
+}
+.bottom .section-theme {
+    margin-top: 30px;
+}
+.bottom .section-github:hover, .section-email:hover, .section-theme:hover {
+    color: #E2E8F0;
+}
+.bottom .section-theme {
+    margin-bottom: 0;
+}
+.bottom .section-github .icon-github, .icon-email, .icon-theme {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}

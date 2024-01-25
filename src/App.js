@@ -1,11 +1,13 @@
 import './App.css';
-import Sidebar from "./components/Sidebar";
-import Main from "./components/Main";
-import {useEffect, useRef} from "react";
+import Sidebar from "./layout/Sidebar";
+import Main from "./layout/Main";
+import {useContext, useEffect, useRef} from "react";
+import {ThemeContext} from "./context/ThemeContext";
 
 
 function App() {
   const mouseRef = useRef(null);
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const updateMousePosition = (mouseEvent) => {
@@ -24,9 +26,10 @@ function App() {
   return (
     <>
       <style jsx="true">{`
-        .mouse-styling {
+        .styling-dark {
           width: 100%;
           height: 100%;
+          color: #94A3B8;
           background-attachment: fixed;
           background-image: radial-gradient(
             circle at var(--x, 100px) var(--y, 100px),
@@ -34,9 +37,20 @@ function App() {
             #110641 50%
           );
         }
+        .styling-light {
+          width: 100%;
+          height: 100%;
+          color: #000;
+          background-attachment: fixed;
+          background-image: radial-gradient(
+                  circle at var(--x, 100px) var(--y, 100px),
+                  gray 0,
+                  #fff 50%
+          );
+        }
       `}
       </style>
-      <div className="App mouse-styling" ref={mouseRef}>
+      <div className={"App " + (theme==="dark" ? "styling-dark" : "styling-light") } ref={mouseRef}>
         <div className="container">
           <Sidebar />
           <Main />
